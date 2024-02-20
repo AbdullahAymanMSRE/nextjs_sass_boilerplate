@@ -25,16 +25,6 @@
   }
 }
 
-@mixin sidePadding($l) {
-  padding-left: $l;
-  padding-right: $l;
-}
-
-@mixin sideMargin($l) {
-  margin-left: $l;
-  margin-right: $l;
-}
-
 $sizes: xxs 320, xs 480, sm 576, md 768, lg 1092, xl 1300;
 @mixin mediaQuery($size) {
   @each $name, $width in $sizes {
