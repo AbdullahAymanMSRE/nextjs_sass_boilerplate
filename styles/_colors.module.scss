@@ -1,0 +1,13 @@
+$bg: black;
+$bgSoft: #333;
+$text: white;
+$textSoft: #eee;
+$btn: white;
+
+:export {
+    bg: $bg;
+    bgSoft: $bgSoft;
+    text: $text;
+    textSoft: $textSoft;
+    btn: $btn;
+}

@@ -1,0 +1,31 @@
+@use '@/styles/helper/colors.module';
+@use '@/styles/helper/variables.module';
+@use '@/styles/helper/mixins.module';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: colors.$bg;
+  color: colors.$text;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  @include mixins.sideMargin(variables.$bg-side-margin);
+  @include mixins.sidePadding(variables.$bg-side-padding);
+}
+
+@include mixins.mediaQuery(md){
+  .container{
+    @include mixins.sideMargin(variables.$sm-side-margin);
+    @include mixins.sidePadding(variables.$sm-side-padding);
+  }
+}
