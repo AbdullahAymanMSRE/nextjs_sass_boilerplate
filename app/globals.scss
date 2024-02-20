@@ -19,13 +19,13 @@ a{
 }
 
 .container{
-  @include mixins.sideMargin(variables.$bg-side-margin);
-  @include mixins.sidePadding(variables.$bg-side-padding);
+  padding-inline: variables.$bg-side-margin;
+  max-width: 1500px;
+  margin-inline: auto;
 }
 
 @include mixins.mediaQuery(md){
   .container{
-    @include mixins.sideMargin(variables.$sm-side-margin);
-    @include mixins.sidePadding(variables.$sm-side-padding);
+    padding-inline: variables.$sm-side-margin;
   }
 }
